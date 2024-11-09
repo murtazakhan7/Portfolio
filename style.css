@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg--color: #081b29;
+    --second-bg-color: #112e42;
+
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+
+}
+
+*::selection {
+    background-color: rgb(153, 239, 165);
+    color: rgb(0, 0, 0);
+}
+
+.navigation {
+    background-color: var(--second-bg-color);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* Stack items vertically on small screens */
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    margin: 6px;
+    padding: 6px;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: green;
+    color: red;
+}
+
+.profile_image {
+
+    position: absolute;
+    top: 49px;
+    left: 0px;
+    width: 120px;
+    height: 120px;
+}
+
+img {
+    border: 2px solid transparent;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.box {
+    width: 100%;
+    height: 80vh;
+    background-color: var(--bg--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.hrline {
+    width: 100%;
+    height: 4px;
+    background-color: gray;
+    border: none;
+}
+
+.edu-exp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    height: 80vh;
+    background-color: var(--bg--color);
+}
+
+/* Education and Experience Containers */
+.education,
+.experience {
+    flex: 1;
+    width: 280px;
+    background: var(--bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+/* Section Titles */
+.education h2,
+.experience h2 {
+
+
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007acc;
+}
+
+.edubox {
+
+    margin: 10px;
+
+}
+
+/* List Items */
+.education ul,
+.experience ul {
+
+    min-width: 200px;
+    min-height: 100px;
+    border: 3px solid #1186c1;
+    border-radius: 6px;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.education ul:hover,
+.experience ul:hover {
+    background-color: var(--second-bg-color);
+}
+
+.education li,
+.experience li {
+    margin-bottom: 20px;
+}
+
+.education h3,
+.experience h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #45b591;
+}
+
+.education p,
+.experience p {
+    text-align: left;
+    color: #f6f6f6;
+}
+
+
+
+
+
+.start {
+    position: absolute;
+    top: 180px;
+    left: 50px;
+
+}
+
+.my_intro {
+    width: 90%;
+    height: 250px;
+
+}
+
+.name {
+    font-size: 30px;
+}
+
+.what_am_i {
+    font-size: 26px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.intro {
+    padding-top: 8px;
+    overflow: auto;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+pre {
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 40px;
+}
+
+pre::first-line {
+    font-weight: bolder;
+    color: #d7fd18;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 3px;
+    padding: 3px;
+    margin: 7px;
+
+}
+
+
+.info a {
+    font-size: 22px;
+
+}
+
+#logo {
+    margin: 0px;
+    padding: 8px;
+
+
+
+}
+
+#Contact {
+    height: 30vh;
+    background-color: var(--second-bg-color);
+}
+
+.copyright {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.journey {
+    text-align: center;
+
+}
+
+.skills {
+    margin: 4px;
+    margin-bottom: 5px;
+    border: 2px solid white;
+    border-radius: 11px;
+
+    align-self: flex-start;
+    width: 97%;
+    height: 24px;
+  
+}
+
+.j_s {
+    background-color: rgb(39, 197, 128);
+    border: 0px solid transparent;
+    border-radius: 10px;
+    width: 60%;
+    object-fit: cover;
+    height: 20px;
+}
+
+.py {
+    background-color: rgb(39, 197, 128);
+    width: 70%;
+    object-fit: cover;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.cpp {
+    
+    background-color: rgb(39, 197, 128);
+    width: 80%;
+    object-fit: cover;
+    height: 20px;
+    border-radius: 10px;
+}
+.per{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    align-self: flex-end;
+}
+
+
+
+
+
+/* Reduce font size in navbar for very small screens */
+@media (max-width: 680px) {
+
+
+    body {
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+
+    }
+
+    .start {
+        position: absolute;
+        top: 85px;
+        left: 50px;
+
+    }
+
+    .intro {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+    a {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+
+    ul {
+        margin: 0px;
+        padding: 5px;
+        display: flex;
+
+    }
+
+    ul li {
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .profile_image {
+        position: absolute;
+        top: 30px;
+        left: 0px;
+        width: 60px;
+        height: 60px;
+    }
+
+    img {
+
+        height: 60px;
+        width: 60px;
+    }
+
+    .info a {
+        font-size: 18px;
+    }
+
+    .info {
+        column-gap: 2px;
+    }
+
+    .my_intro {
+        width: 200px;
+        height: 250px;
+
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .edu-exp {
+        height: 100vh;
+    }
+}
+
+@media (max-width:480px) {
+    .name {
+        font-size: 22px;
+    }
+
+    .what_am_i {
+        font-size: 20px;
+    }
+
+    .intro {
+        width: 100%;
+    }
+    .edu-exp {
+        height: 125vh;
+    }
+
+}
