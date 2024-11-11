@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
- <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style1.css">
 
     <script defer src="script.js"></script>
 </head>
 
 <body style="overflow-x: hidden;">
 
-    <div class="navigation">
+    <div id='begin'class="navigation">
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <li><a href="#begin">Home</a></li>
                 <li><a href="#qualifications">About</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>
@@ -34,7 +34,7 @@
         <div class="start">
 
             <div>
-                <h2 class="name">Hi, I am Muhammad Murtaza</h2>
+                <h2 class="name">Hi, I am  <span class="mur"> <h2>Muhammad Murtaza</h2></span></h2>
                 <br>
                 <div class="what_am_i">&nbsp;<span id="role"> </span></div>
                 <br>
@@ -69,7 +69,7 @@
     <hr class="hrline">
 
     <section id="qualifications" class="edu-exp edu_exp">
-        <h2 class="journey">My Journey</h2>
+        <h2 class="journey"> My Journey</h2>
         
         <div class="education">
             
@@ -132,17 +132,17 @@
 
     <section class="edu-exp skills1">
         <h2 class="journey">SKILLS</h2>
-        <div class="education">
+        <div class="education ">
            
             <h2>Programming</h2>
-            <div class="boxes">
+            <div class="boxes boxes1 ">
                 <div class="edubox "></div>
                 <ul>
-                    <li>
-                        <h3>C++</h3>
-                    </li>
-                    
-                        <span class="per">80%</span>
+                
+                    <div id="percentage">
+
+                       <div >C++</div><div class="per">80%</div>
+                    </div>
                     <div class="skills">
                         <div   class=" skills-bar cpp"></div>
                     </div>
@@ -150,10 +150,11 @@
                 </ul>
                 <div class="edubox "></div>
                 <ul>
-                    <li>
-                        <h3>Python</h3>
-                    </li>
-                    <span class="per">70%</span>
+                   
+                    <div id="percentage">
+
+                        <div >Python</div><div class="per">70%</div>
+                     </div>
 
                     <div class="skills">
                         <div  class=" skills-bar py"></div>
@@ -162,10 +163,11 @@
                 </ul>
                 <div class="edubox "></div>
                 <ul>
-                    <li>
-                        <h3>Java Script</h3>
-                    </li>
-                    <span class="per">60%</span>
+                   
+                    <div id="percentage">
+
+                        <div >JS</div><div class="per">60%</div>
+                     </div>
                     <div class="skills">
                         <div  class=" skills-bar j_s js"></div>
                     </div>
@@ -177,12 +179,14 @@
         <div class="experience">
 
             <h2>Problem Solving</h2>
+            <div class="boxes1">
             <div class="edubox "></div>
                 <ul>
-                    <li>
-                        <h3>DSA</h3>
-                    </li>
-                    <span class="per">85%</span>
+                   
+                    <div id="percentage">
+
+                        <div >DSA</div><div class="per">80%</div>
+                     </div>
 
                     <div class="skills">
                         <div class="dsa"></div>
@@ -191,10 +195,11 @@
                 </ul>
                 <div class="edubox "></div>
                 <ul>
-                    <li>
-                        <h3>Linear Algebra,Calculas etc</h3>
-                    </li>
-                    <span class="per">70%</span>
+                   
+                    <div id="percentage">
+
+                        <div >LA,Calculas</div><div class="per">80%</div>
+                     </div>
 
                     <div class="skills">
                         <div class="mt"></div>
@@ -202,6 +207,7 @@
 
                 </ul>
             </div>
+        </div>
         </div>
     </section>
 
@@ -214,7 +220,12 @@
 
         <ul class="info">
 
-
+            <li>
+                <a aria-label="Email" target="_blank" >
+                  
+                  ✉    murtazamuhammad508@gmail.com
+                </a>
+            </li>
 
             <li>
                 <a aria-label="Linkedin Profile" target="_blank"
