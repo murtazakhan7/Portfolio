@@ -6,7 +6,552 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
+ <style>
+    * {
+        margin: 0;
+        padding: 0;
+    
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    :root {
+        --bg--color: #081b29;
+        --second-bg-color: #112e42;
+    
+    }
+    
+    
+    body {
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+    
+    }
+    
+    *::selection {
+        background-color: rgb(153, 239, 165);
+        color: rgb(0, 0, 0);
+    }
+    
+    .navigation {
+        background-color: var(--second-bg-color);
+        color: white;
+        font-weight: bold;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        /* Stack items vertically on small screens */
+        align-items: center;
+        list-style: none;
+        
+    }
+    
+    li {
+        margin: 6px;
+        padding: 6px;
+    
+        
+    }
+    .navigation li:hover{
+        border: 0px solid transparent;
+        border-radius: 9px;
+        background-color: #081b29;
+
+    }
+    
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        transition: color 1.8s ease;
+    }
+    
+    a:hover {
+        
+        
+        color: aqua;
+    }
+    
+    .profile_image {
+    
+        position: absolute;
+        top: 49px;
+        left: 0px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .myimg {
+        border: 2px solid transparent;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .box {
+        width: 100%;
+        height: 80vh;
+        background-color: var(--bg--color);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    .hrline {
+        width: 100%;
+        height: 4px;
+        background-color: gray;
+        border: none;
+    }
+    
+    .edu-exp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        min-height: 80vh;
+        padding-bottom: 20px;
+        background-color: var(--bg--color);
+    }
+    
+    /* Education and Experience Containers */
+    .education,
+    .experience {
+        flex: 1;
+        width: 280px;
+        background: var(--bg-color);
+        padding: 20px;
+        border-radius: 10px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      
+    
+    }
+    
+    /* Section Titles */
+    .education h2,
+    .experience h2 {
+    
+    
+        font-size: 1.8em;
+        margin-bottom: 15px;
+        color: #007acc;
+    }
+    
+    .edubox {
+    
+        margin: 10px;
+    
+    }
+    
+    /* List Items */
+    .education ul,
+    .experience ul {
+    
+        min-width: 200px;
+        min-height: 100px;
+        border: 3px solid #1186c1;
+        border-radius: 6px;
+        flex-direction: column;
+        list-style-type: none;
+    }
+    
+    .education ul:hover,
+    .experience ul:hover {
+        background-color: var(--second-bg-color);
+    }
+    
+    .education li,
+    .experience li {
+        margin-bottom: 20px;
+    }
+    
+    .education h3,
+    .experience h3 {
+        text-align: center;
+        font-size: 1.2em;
+        color: #45b591;
+    }
+    
+    .education p,
+    .experience p {
+        text-align: left;
+        color: #f6f6f6;
+    }
+    
+    
+    .start {
+        position: absolute;
+        top: 180px;
+        left: 50px;
+        min-width: 60%;
+        align-items: center;
+        padding: 15px;
+    
+    }
+    
+    .my_intro {
+        max-width: 100%;
+        height: 250px;
+    
+    }
+
+    
+    .name {
+        font-size: 30px;
+    }
+    
+    .what_am_i {
+        font-size: 26px;
+        font-weight: bold;
+        color: yellow;
+    }
+    
+    .intro {
+        
+        overflow: hidden;
+        text-align: left;
+        font-size: 18px;
+        max-width: 100%;
+    
+    }
+    
+    pre {
+        font-size: 16px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 40px;
+    }
+    
+    pre::first-line {
+        font-weight: bolder;
+        color: #d7fd18;
+    }
+    
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 3px;
+        padding: 3px;
+        margin: 7px;
+    
+    }
+    
+    
+    .info a {
+        font-size: 22px;
+    
+    }
+    
+    #logo {
+        margin: 0px;
+        padding: 8px;
+    
+    
+    
+    }
+    
+    #Contact {
+        height: 30vh;
+        background-color: var(--second-bg-color);
+    }
+    
+    .copyright {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    
+    .journey {
+        text-align: center;
+        justify-self: center;
+        
+        width: 100%;
+        margin-top: 20px;
+        color: rgb(7, 203, 187);
+        font-size: 32px;
+    
+    }
+    
+    .skills {
+        margin: 4px;
+        margin-bottom: 5px;
+        border: 2px solid white;
+        border-radius: 11px;
+    
+        align-self: flex-start;
+        width: 97%;
+        height: 24px;
+      
+    }
+    
+    .j_s {
+        background-color: #00d4ff;
+        border: 0px solid transparent;
+        border-radius: 10px;
+        width: 60%;
+        object-fit: cover;
+        height: 20px;
+    }
+    
+    .py {
+        background-color: #00d4ff;
+        width: 70%;
+        object-fit: cover;
+        height: 20px;
+        border-radius: 10px;
+    }
+    
+    .cpp {
+        
+        background-color: #00d4ff;
+        width: 80%;
+        object-fit: cover;
+        height: 20px;
+        border-radius: 10px;
+    }
+    .dsa {
+        
+        background-color: #00d4ff;
+        width: 85%;
+        object-fit: cover;
+        height: 20px;
+        border-radius: 10px;
+    }
+    .mt {
+        
+        background-color: #00d4ff;
+        width: 70%;
+        object-fit: cover;
+        height: 20px;
+        border-radius: 10px;
+    }
+    .per{
+        margin: 0px;
+        padding: 0px;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        align-self: flex-end;
+    }
+    .skills1{
+        height: 100vh;
+    }
+
+    .bg{
+        align-self: right;
+    }
+    #role {
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    
+    /* Fade-in animation for sections */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.profile_image img {
+    animation: bounce 1.5s ease-in-out;
+}
+/* Skill bar animation */
+/* Keyframes for skill bar fill animation */
+/* Keyframes for Animations */
+
+
+@keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+/* Skill Bar Styles */
+
+
+
+/* Animation Initialization (Prevent animations from playing before scroll) */
+
+.education,
+.experience {
+    opacity: 0;
+}
+
+
+    /* Reduce font size in navbar for very small screens */
+    @media (max-width: 680px) {
+    
+    
+        body {
+            font-family: Arial, sans-serif;
+    
+        }
+    
+        .start {
+            position: absolute;
+            top: 85px;
+            left: 50px;
+    
+        }
+    
+        .intro {
+            font-size: 16px;
+            width: 100%;
+        }
+    
+    
+        a {
+            font-size: 14px;
+            padding: 6px;
+        }
+    
+    
+        ul {
+            margin: 0px;
+            padding: 5px;
+            display: flex;
+    
+        }
+    
+        ul li {
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .profile_image {
+            position: absolute;
+            top: 33px;
+            left: 0px;
+            width: 80px;
+            height: 80px;
+        }
+    
+        .myimg {
+    
+            height: 80px;
+            width: 80px;
+        }
+    
+        .info a {
+            font-size: 18px;
+        }
+    
+        .info {
+            column-gap: 2px;
+        }
+    
+      
+    
+        .copyright {
+            font-size: 14px;
+            padding: 5px;
+        }
+    
+        .edu-exp {
+            margin-top: 0px;
+            gap: 0px;
+        }
+        .journey{
+            font-size: 30px;
+        }
+       
+        #home {
+            max-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+    }
+    @media (max-width: 580px) {
+        .skills1{
+            height: 130vh;
+        }
+        .journey{
+            font-size: 28px;
+        }
+
+    }
+    
+    @media (max-width:480px) {
+        .name {
+            font-size: 22px;
+        }
+    
+        .what_am_i {
+            font-size: 20px;
+        }
+    
+        .intro {
+            width: 100%;
+        }
+        .edu-exp {
+            gap: 5px;
+        
+        }
+        .my_intro {
+            min-width: 90%;
+            height: 250px;
+        
+        }
+       
+    
+    }
+    
+ </style>
 
     <script defer src="script.js"></script>
 </head>
@@ -25,9 +570,9 @@
 
 
 
-    <div id='home' class="box intro">
+    <section id='home' class="box intro">
         <div class="profile_image">
-            <img src="my.png" alt="myimage">
+            <img class="myimg" src="my.png" alt="myimage">
         </div>
 
 
@@ -36,7 +581,7 @@
             <div>
                 <h2 class="name">Hi, I am Muhammad Murtaza</h2>
                 <br>
-                <div class="what_am_i">A &nbsp;<span id="role"> </span></div>
+                <div class="what_am_i">&nbsp;<span id="role"> </span></div>
                 <br>
 
 
@@ -63,35 +608,43 @@
 
 
 
-    </div>
+    </section>
 
 
     <hr class="hrline">
 
-    <section class="edu-exp">
+    <section id="qualifications" class="edu-exp edu_exp">
+        <h2 class="journey">My Journey</h2>
+        
         <div class="education">
-            <h2 class="journey">My Journey</h2>
+            
+           
             <h2>Education</h2>
             <div class="boxes">
                 <div class="edubox "></div>
                 <ul>
                     <li>
                         <h3>GIK Institute</h3>
-                        <p>BSc in Computer Science (2025)</p>
+                        <p style="margin: 2px;">BSc in Computer Science
+                        </p>
+                        
+                        <p>Expected Graduation: 2026</p>
                     </li>
                 </ul>
                 <div class="edubox "></div>
                 <ul>
                     <li>
-                        <h3>GIK Institute</h3>
-                        <p>BSc in Computer Science (2025)</p>
+                        <h3>Government College Peshawar</h3>
+                        <p style="margin: 2px;"> FSC Pre-Engineering</p>
+                        <p>Grade: A+</p>
                     </li>
                 </ul>
                 <div class="edubox "></div>
                 <ul>
                     <li>
-                        <h3>GIK Institute</h3>
-                        <p>BSc in Computer Science (2025)</p>
+                        <h3>Army Public School</h3>
+                        <p>Matric</p>
+                        <p>Grade: A</p>
                     </li>
                 </ul>
             </div>
@@ -105,7 +658,7 @@
                     <ul>
                         <li>
                             <h3>CodSoft (Virtual Internship)</h3>
-                            <p>Focused on C++ Programming</p>
+                            <p>Focused on C++ Programming through various projects</p>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +666,7 @@
                     <ul>
                         <li>
                             <h3>Formula GIKI Team Infinity</h3>
-                            <p>Technical Team Member</p>
+                            <p>Ex Technical Team Member</p>
                         </li>
                     </ul>
                 </div>
@@ -122,9 +675,10 @@
     </section>
     <hr class="hrline">
 
-    <section class="edu-exp">
+    <section class="edu-exp skills1">
+        <h2 class="journey">SKILLS</h2>
         <div class="education">
-            <h2 class="journey">SKILLS</h2>
+           
             <h2>Programming</h2>
             <div class="boxes">
                 <div class="edubox "></div>
@@ -135,7 +689,7 @@
                     
                         <span class="per">80%</span>
                     <div class="skills">
-                        <div class="cpp"></div>
+                        <div   class=" skills-bar cpp"></div>
                     </div>
 
                 </ul>
@@ -147,7 +701,7 @@
                     <span class="per">70%</span>
 
                     <div class="skills">
-                        <div class="py"></div>
+                        <div  class=" skills-bar py"></div>
                     </div>
 
                 </ul>
@@ -158,7 +712,37 @@
                     </li>
                     <span class="per">60%</span>
                     <div class="skills">
-                        <div class="j_s"></div>
+                        <div  class=" skills-bar j_s js"></div>
+                    </div>
+                </ul>
+                
+            </div>
+        </div>
+        
+        <div class="experience">
+
+            <h2>Problem Solving</h2>
+            <div class="edubox "></div>
+                <ul>
+                    <li>
+                        <h3>DSA</h3>
+                    </li>
+                    <span class="per">85%</span>
+
+                    <div class="skills">
+                        <div class="dsa"></div>
+                    </div>
+
+                </ul>
+                <div class="edubox "></div>
+                <ul>
+                    <li>
+                        <h3>Linear Algebra,Calculas etc</h3>
+                    </li>
+                    <span class="per">70%</span>
+
+                    <div class="skills">
+                        <div class="mt"></div>
                     </div>
 
                 </ul>
@@ -169,7 +753,7 @@
 
     <hr class="hrline">
 
-    <div id='Contact' class="box">
+    <section id='Contact' class="box">
 
 
 
@@ -230,8 +814,7 @@
             </li>
 
         </ul>
-    </div>
-
+    </section>
     <hr class="hrline">
     <div class="copyright">
         &nbsp;&nbsp;&nbsp; &nbsp;&copy; &nbsp; |&nbsp; All rights reserved &nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Muhammad
