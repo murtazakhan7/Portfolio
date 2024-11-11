@@ -140,6 +140,7 @@ a:hover {
 /* Section Titles */
 .education h2,
 .experience h2 {
+
 text-align: left;
 
     font-size: 1.8em;
@@ -364,7 +365,7 @@ pre::first-line {
 
 }
 .skills1{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .bg{
@@ -532,9 +533,7 @@ opacity: 0;
     
 }
 @media (max-width: 580px) {
-    .skills1{
-        height: 130vh;
-    }
+    
     .journey{
         font-size: 28px;
     }
