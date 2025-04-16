@@ -1,5 +1,5 @@
 // Typing Effect Code
-const roles = ["Front-End Developer", "Back-End Developer"];
+const roles = ["Front-End Developer", "Back-End Developer", "Aspiring ML Engineer"];
 let roleIndex = 0;
 let charIndex = 0;
 let typing = true;
