@@ -19,7 +19,7 @@ function typeRole() {
       setTimeout(typeRole, pauseBetweenRoles);
       return;
     }
-  } else {
+  } else { 
     roleElement.textContent = currentRole.substring(0, charIndex - 1);
     charIndex--;
 
