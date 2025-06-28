@@ -13,13 +13,27 @@
 
 <body style="overflow-x: hidden;">
 
-    <div id='begin'class="navigation">
+    <div id='begin' class="navigation">
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#qualifications">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <span>Murtaza</span>
+                </div>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#qualifications">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </div>
 
@@ -43,14 +57,9 @@
                 <div class="my_intro">
 
                     <div class="intro">
-                        I am an undergraduate student at GIK pursuing a degree in Computer Science. I have experience in
-                        Front-End Development, Backend (Django), Databases (PostgreSQL), Vanilla JavaScript, basic
-                        Node.js, and programming languages such as Python and C++. I am here to help you create dynamic,
-                        interactive web pages, and more.
-
+                        <h3>About Me</h3>
+                        <p>Proficient in C, C++, and Python with hands‑on experience in full‑stack development (Django, DRF) and high‑performance parallel computing (OpenMP, MPI, CUDA). Currently exploring Node.js and seeking a Software Engineering internship to apply my skills to impactful, team‑driven projects and learn from experienced mentors.</p>
                     </div>
-
-
 
                 </div>
 
@@ -65,6 +74,69 @@
 
     </section>
 
+
+    <hr class="hrline">
+
+    <section id="projects" class="projects-section">
+        <h2 class="journey">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>HealthAtlas: AI-Driven Prescription Digitization</h3>
+                <p>AI-driven prescription digitization & mapping system (currently in development)</p>
+                <p class="project-date">March–May 2025</p>
+                <a href="#" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>GIKI Connect</h3>
+                <p>Django REST Framework application for connecting GIKI students</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/GIKI-Connect" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Database Management System for Dota 2.1</h3>
+                <p>Flask-based database management system for Dota 2.1</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Database-Management-For-Dota2.1" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Blog ReactJS</h3>
+                <p>React-based blog application</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Blog-ReactJs" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Flight Booker</h3>
+                <p>Django-based flight booking system</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Flight-Booker" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Sign Language Detection</h3>
+                <p>Machine learning project for sign language recognition</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Sign-Language-Detection" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Parallel ML Pipeline</h3>
+                <p>Machine learning pipeline using OpenMP & MPI for parallel processing</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Machine-Learning-in-Parallel-Using-OpenMP-and-MPI" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+            
+            <div class="project-card">
+                <h3>Medicinal Drug Recommendation</h3>
+                <p>AI-based system for recommending medicinal drugs</p>
+                <p class="project-date">2024</p>
+                <a href="https://github.com/murtazakhan7/Medicinal-Drug-Recommendation" target="_blank" class="github-link">View on GitHub</a>
+            </div>
+        </div>
+    </section>
 
     <hr class="hrline">
 
@@ -72,70 +144,48 @@
         <h2 class="journey"> My Journey</h2>
         
         <div class="education">
-            
-           
             <h2>Education</h2>
-            <div class="boxes">
-                <div class="edubox "></div>
-                <ul>
-                    <li>
-                        <h3>GIK Institute</h3>
-                        <p style="margin: 2px;">BSc in Computer Science
-                        </p>
-                        
-                        <p>Expected Graduation: 2026</p>
-                    </li>
-                </ul>
-                <div class="edubox "></div>
-                <ul>
-                    <li>
-                        <h3>Government College Peshawar</h3>
-                        <p style="margin: 2px;"> FSC Pre-Engineering</p>
-                        <p>Grade: A+</p>
-                    </li>
-                </ul>
-                <div class="edubox "></div>
-                <ul>
-                    <li>
-                        <h3>Army Public School</h3>
-                        <p>Matric</p>
-                        <p>Grade: A</p>
-                    </li>
-                </ul>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>BSc in Computer Science</h3>
+                        <p class="institution">GIK Institute</p>
+                        <p class="dates">2022–2026</p>
+                        <p class="details">Expected Graduation: 2026</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>FSC Pre-Engineering</h3>
+                        <p class="institution">Government College Peshawar</p>
+                        <p class="dates">2020–2022</p>
+                        <p class="details">Grade: A+</p>
+                    </div>
+                </div>
+                
+                <div class="education-item">
+                    <div class="education-content">
+                        <h3>Matric</h3>
+                        <p class="institution">Army Public School</p>
+                        <p class="dates">2018–2020</p>
+                        <p class="details">Grade: A</p>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="experience">
-
-            <h2>Experience</h2>
-            <div class="boxes">
-                <div class="edubox">
-                    <ul>
-                        <li>
-                            <h3>CodSoft (Virtual Internship)</h3>
-                            <p>Focused on C++ Programming through various projects</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="edubox">
-                    <ul>
-                        <li>
-                            <h3>Formula GIKI Team Infinity</h3>
-                            <p>Ex Technical Team Member</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </section>
     <hr class="hrline">
 
-    <section class="edu-exp skills1">
+    <section style="color:rgb(8, 9, 9) important" class="edu-exp skills1">
         <h2 class="journey">SKILLS</h2>
         <div class="education ">
            
             <h2>Programming</h2>
-            <div class="boxes boxes1 ">
+            <div  class="boxes boxes1 ">
                 <div class="edubox "></div>
                 <ul>
                 
@@ -153,7 +203,7 @@
                    
                     <div id="percentage">
 
-                        <div >Python</div><div class="per">70%</div>
+                        <div >Python</div><div class="per">80%</div>
                      </div>
 
                     <div class="skills">
@@ -166,13 +216,60 @@
                    
                     <div id="percentage">
 
-                        <div >JS</div><div class="per">60%</div>
+                        <div >JS</div><div class="per">75%</div>
                      </div>
                     <div class="skills">
                         <div  class=" skills-bar j_s js"></div>
                     </div>
                 </ul>
                 
+                <div class="edubox "></div>
+                <ul>
+                   
+                    <div id="percentage">
+
+                        <div >React</div><div class="per">70%</div>
+                     </div>
+                    <div class="skills">
+                        <div  class=" skills-bar react"></div>
+                    </div>
+                </ul>
+                
+                <div class="edubox "></div>
+                <ul>
+                   
+                    <div id="percentage">
+
+                        <div >Django</div><div class="per">75%</div>
+                     </div>
+                    <div class="skills">
+                        <div  class=" skills-bar django"></div>
+                    </div>
+                </ul>
+                
+                <div class="edubox "></div>
+                <ul>
+                   
+                    <div id="percentage">
+
+                        <div >GitHub CI/CD</div><div class="per">70%</div>
+                     </div>
+                    <div class="skills">
+                        <div  class=" skills-bar github"></div>
+                    </div>
+                </ul>
+                
+                <div class="edubox "></div>
+                <ul>
+                   
+                    <div id="percentage">
+
+                        <div >Parallel Programming</div><div class="per">75%</div>
+                     </div>
+                    <div class="skills">
+                        <div  class=" skills-bar parallel"></div>
+                    </div>
+                </ul>
             </div>
         </div>
         
