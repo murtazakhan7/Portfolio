@@ -1332,9 +1332,7 @@ to {
   background-color: var(--skill-fill-color);
   transition: width 0.6s cubic-bezier(.4,2,.6,1);
 }
-.skill:hover .progress {
-  background-color: #66a74a;
-}
+
 @media (max-width: 600px) {
   .skill-header { font-size: 0.95rem; }
   .progress-bar { height: 13px; }
