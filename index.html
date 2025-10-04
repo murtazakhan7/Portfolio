@@ -7,21 +7,29 @@
     <title>Muhammad Murtaza - Portfolio</title>
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
     <style>
+        /* Navigation hover effect */
+        .nav-menu a:hover {
+            background-color: #00d9ff !important;
+            color: #000 !important;
+            transition: all 0.3s ease;
+        }
+
         .contact-form-container {
             max-width: 600px;
             margin: 2rem auto;
             padding: 2rem;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(30, 30, 30, 0.8);
             border-radius: 10px;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         .contact-form-container h3 {
             text-align: center;
             margin-bottom: 1.5rem;
             color: #fff;
+            font-size: 1.8rem;
         }
 
         .form-group {
@@ -39,19 +47,21 @@
         .form-group textarea {
             width: 100%;
             padding: 0.75rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 5px;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(50, 50, 50, 0.6);
             color: #fff;
             font-size: 1rem;
             transition: all 0.3s ease;
+            box-sizing: border-box;
         }
 
         .form-group input:focus,
         .form-group textarea:focus {
             outline: none;
-            border-color: #4a9eff;
-            background: rgba(255, 255, 255, 0.15);
+            border-color: #00d9ff;
+            background: rgba(60, 60, 60, 0.8);
+            box-shadow: 0 0 10px rgba(0, 217, 255, 0.3);
         }
 
         .form-group textarea {
@@ -63,7 +73,7 @@
         .submit-btn {
             width: 100%;
             padding: 1rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #00d9ff 0%, #0099cc 100%);
             color: white;
             border: none;
             border-radius: 5px;
@@ -71,11 +81,13 @@
             font-weight: 600;
             cursor: pointer;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-top: 1rem;
         }
 
         .submit-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 15px rgba(0, 217, 255, 0.5);
+            background: linear-gradient(135deg, #00e5ff 0%, #00b8e6 100%);
         }
 
         .submit-btn:active {
@@ -100,6 +112,19 @@
             background: rgba(244, 67, 54, 0.2);
             border: 1px solid #f44336;
             color: #f44336;
+        }
+
+        /* Contact section layout */
+        #contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact .info {
+            margin-top: 2rem;
+            width: 100%;
+            max-width: 600px;
         }
     </style>
     <script defer src="script.js"></script>
@@ -578,4 +603,3 @@
 </body>
 
 </html>
-
