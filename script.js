@@ -1,131 +1,112 @@
 /* =============================================
-   Muhammad Murtaza Portfolio — script.js
+   Muhammad Murtaza — Portfolio
    ============================================= */
 
-/* ── Nav scroll effect ── */
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+
+/* ── Sticky nav background ── */
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 20);
-}, { passive: true });
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 24);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
 
-/* ── Active nav link on scroll ── */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-link');
-
+/* ── Active nav link ── */
+const navLinks = document.querySelectorAll('.nav-link[href^="#"]');
 const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
-                link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-            });
-        }
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const id = entry.target.id;
+        navLinks.forEach((link) => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+        });
     });
-}, { rootMargin: '-40% 0px -55% 0px' });
+}, { rootMargin: '-45% 0px -50% 0px' });
 
-sections.forEach(s => sectionObserver.observe(s));
+document.querySelectorAll('section[id]').forEach((s) => sectionObserver.observe(s));
 
-/* ── Hamburger menu ── */
+/* ── Mobile menu ── */
 const hamburger = document.getElementById('hamburger');
 const navLinksList = document.getElementById('nav-links');
 
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('open');
-    navLinksList.classList.toggle('open');
+const setMenu = (open) => {
+    hamburger.classList.toggle('open', open);
+    navLinksList.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+};
+
+hamburger.addEventListener('click', () => setMenu(!navLinksList.classList.contains('open')));
+hamburger.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setMenu(!navLinksList.classList.contains('open'));
+    }
+});
+navLinksList.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setMenu(false)));
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
 });
 
-// Close on link click
-navLinksList.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        navLinksList.classList.remove('open');
+/* ── Scroll-triggered reveals, staggered within each group ── */
+const revealEls = document.querySelectorAll('[data-reveal]');
+
+if (prefersReducedMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach((el) => el.classList.add('revealed'));
+} else {
+    const childrenOf = new Map();
+    revealEls.forEach((el) => {
+        const parent = el.parentElement;
+        if (!childrenOf.has(parent)) {
+            childrenOf.set(parent, Array.from(parent.querySelectorAll(':scope > [data-reveal]')));
+        }
+        const idx = childrenOf.get(parent).indexOf(el);
+        if (idx > 0) el.style.setProperty('--d', `${Math.min(idx, 6) * 70}ms`);
     });
-});
 
-/* ── Typed role animation ── */
-const roles = [
-    'AI/ML Engineer',
-    'Software Engineer',
-    'RAG Pipeline Builder',
-    'Backend Engineer',
-    'LLM Fine-tuner',
-];
-let roleIdx = 0;
-let charIdx = 0;
-let deleting = false;
-let typePause = false;
-const typedEl = document.getElementById('typed-role');
+    const revealObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add('revealed');
+            obs.unobserve(entry.target);
+        });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
 
-function typeLoop() {
-    if (!typedEl) return;
-    const current = roles[roleIdx];
-
-    if (typePause) {
-        typePause = false;
-        setTimeout(typeLoop, 1400);
-        return;
-    }
-
-    if (!deleting) {
-        typedEl.textContent = current.slice(0, charIdx + 1);
-        charIdx++;
-        if (charIdx === current.length) {
-            deleting = true;
-            typePause = true;
-        }
-        setTimeout(typeLoop, 75);
-    } else {
-        typedEl.textContent = current.slice(0, charIdx - 1);
-        charIdx--;
-        if (charIdx === 0) {
-            deleting = false;
-            roleIdx = (roleIdx + 1) % roles.length;
-        }
-        setTimeout(typeLoop, 38);
-    }
+    revealEls.forEach((el) => revealObserver.observe(el));
 }
-typeLoop();
 
-/* ── Fade-in on scroll ── */
-const fadeEls = document.querySelectorAll('[data-fade]');
-const fadeObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-            // Stagger siblings in a group
-            const siblings = Array.from(entry.target.parentElement.querySelectorAll('[data-fade]'));
-            const idx = siblings.indexOf(entry.target);
-            setTimeout(() => {
-                entry.target.classList.add('visible');
-            }, idx * 80);
-            fadeObserver.unobserve(entry.target);
-        }
+/* ── Cursor spotlight on project tiles ── */
+if (canHover && !prefersReducedMotion) {
+    let frame = null;
+    let pending = null;
+
+    const apply = () => {
+        frame = null;
+        if (!pending) return;
+        const { card, x, y } = pending;
+        card.style.setProperty('--mx', `${x}px`);
+        card.style.setProperty('--my', `${y}px`);
+    };
+
+    document.querySelectorAll('[data-spotlight]').forEach((card) => {
+        card.addEventListener('pointermove', (e) => {
+            const rect = card.getBoundingClientRect();
+            pending = { card, x: e.clientX - rect.left, y: e.clientY - rect.top };
+            if (frame === null) frame = requestAnimationFrame(apply);
+        }, { passive: true });
     });
-}, { rootMargin: '0px 0px -60px 0px' });
+}
 
-fadeEls.forEach(el => fadeObserver.observe(el));
-
-/* ── Smooth scroll for anchor links ── */
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            const offset = 72;
-            const top = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top, behavior: 'smooth' });
-        }
-    });
-});
-
-/* ── Contact form (mailto fallback) ── */
+/* ── Contact form (opens the visitor's mail client) ── */
 const contactForm = document.getElementById('contactForm');
 const formStatus = document.getElementById('formStatus');
+const MAILBOX = 'murtazamuhammad508@gmail.com';
 
 if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
+    contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const name    = document.getElementById('name').value.trim();
-        const email   = document.getElementById('email').value.trim();
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
         const subject = document.getElementById('subject').value.trim();
         const message = document.getElementById('message').value.trim();
 
@@ -134,12 +115,16 @@ if (contactForm) {
             formStatus.className = 'form-status error';
             return;
         }
+        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            formStatus.textContent = 'That email address doesn’t look right.';
+            formStatus.className = 'form-status error';
+            return;
+        }
 
         const body = encodeURIComponent(`Hi Murtaza,\n\nName: ${name}\nEmail: ${email}\n\n${message}`);
-        const mailto = `mailto:murtazamuhammad508@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
-        window.location.href = mailto;
+        window.location.href = `mailto:${MAILBOX}?subject=${encodeURIComponent(subject)}&body=${body}`;
 
-        formStatus.textContent = '✓ Opening your mail client...';
+        formStatus.textContent = '✓ Opening your mail client…';
         formStatus.className = 'form-status success';
 
         setTimeout(() => {
@@ -150,37 +135,9 @@ if (contactForm) {
     });
 }
 
-/* ── Subtle parallax on hero orbs ── */
-window.addEventListener('mousemove', (e) => {
-    const orbA = document.querySelector('.orb-a');
-    const orbB = document.querySelector('.orb-b');
-    if (!orbA || !orbB) return;
-    const x = (e.clientX / window.innerWidth - 0.5) * 30;
-    const y = (e.clientY / window.innerHeight - 0.5) * 30;
-    orbA.style.transform = `translate(${x * 0.4}px, ${y * 0.4}px)`;
-    orbB.style.transform = `translate(${-x * 0.25}px, ${-y * 0.25}px)`;
-}, { passive: true });
-
-/* ── Project card tilt effect ── */
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = (e.clientX - rect.left) / rect.width - 0.5;
-        const y = (e.clientY - rect.top)  / rect.height - 0.5;
-        card.style.transform = `translateY(-4px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = '';
-    });
-});
-
-/* ── Copy email on click in footer (bonus UX) ── */
-const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
-emailLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        const email = 'murtazamuhammad508@gmail.com';
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(email).catch(() => {});
-        }
+/* ── Copy address to clipboard when a mail link is used ── */
+document.querySelectorAll('a[href^="mailto:"]').forEach((link) => {
+    link.addEventListener('click', () => {
+        if (navigator.clipboard) navigator.clipboard.writeText(MAILBOX).catch(() => {});
     });
 });

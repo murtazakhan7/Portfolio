@@ -3,532 +3,738 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Murtaza — AI/ML & Software Engineer</title>
-    <meta name="description" content="Muhammad Murtaza — CS graduate from GIKI building AI systems, LLM pipelines, and production backends. Open to AI/ML and Software Engineering roles.">
+    <title>Muhammad Murtaza — Software Engineer / AI Engineer</title>
+    <meta name="description" content="Muhammad Murtaza — Software Engineer and AI Engineer based in Lahore, Pakistan. GIKI CS 2026. Builds LLM products end to end: LangGraph agents, RAG pipelines, and vision+NLP stacks behind FastAPI and Spring Boot.">
+    <meta name="theme-color" content="#08080c">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-inner">
-            <a href="#home" class="nav-logo">MM<span class="logo-dot">.</span></a>
-            <div class="hamburger" id="hamburger" aria-label="Toggle menu">
-                <span></span><span></span><span></span>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="https://github.com/murtazakhan7" target="_blank" class="nav-link nav-github" aria-label="GitHub">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                </a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- Hero -->
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="hero-grid"></div>
-            <div class="orb orb-a"></div>
-            <div class="orb orb-b"></div>
-        </div>
-        <div class="hero-inner">
-            <div class="hero-eyebrow">
-                <span class="status-dot"></span>
-                <span>Open to opportunities</span>
-            </div>
-            <h1 class="hero-name">Muhammad<br>Murtaza</h1>
-            <div class="hero-role-line">
-                <span class="role-prefix">→ </span><span id="typed-role" class="typed-role"></span><span class="type-cursor">_</span>
-            </div>
-            <p class="hero-bio">CS graduate from GIKI building production AI systems — RAG pipelines, multi-stage vision+NLP stacks, and enterprise backends. I ship things end to end.</p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">See My Work</a>
-                <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-            </div>
-            <div class="hero-meta">
-                <div class="meta-pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12 19.79 19.79 0 0 1 1.13 3.37 2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                    Islamabad, Pakistan
-                </div>
-                <div class="meta-pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    GIKI — CGPA 3.54 / 4.0
-                </div>
-                <div class="meta-pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                    Dean's Honor Roll
-                </div>
-            </div>
-        </div>
-        <a href="#about" class="scroll-cue" aria-label="Scroll down">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-        </a>
-    </section>
+<!-- ── SVG icon sprite ── -->
+<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12 19.79 19.79 0 0 1 1.13 3.37 2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4z"/><path d="M7 6H4a2 2 0 0 0 2 4h1M17 6h3a2 2 0 0 1-2 4h-1"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12l7 7 7-7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></symbol>
+</svg>
 
-    <!-- About -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <div class="section-label">About</div>
-            <div class="about-grid">
-                <div class="about-photo-col">
-                    <div class="about-photo-wrap">
-                        <img src="my.png" alt="Muhammad Murtaza" class="about-photo" onerror="this.parentElement.classList.add('no-photo')">
-                        <div class="about-photo-border"></div>
-                    </div>
-                    <div class="about-links">
-                        <a href="https://github.com/murtazakhan7" target="_blank" class="about-link-pill">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            GitHub
-                        </a>
-                        <a href="https://linkedin.com/in/muhammad-murtaza-6444792a9" target="_blank" class="about-link-pill">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            LinkedIn
-                        </a>
-                        <a href="mailto:murtazamuhammad508@gmail.com" class="about-link-pill">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            Email
-                        </a>
-                    </div>
+<!-- ── Navigation ── -->
+<nav class="nav" id="nav">
+    <div class="nav-inner">
+        <a href="#home" class="nav-logo">murtaza<span class="logo-dot">.</span></a>
+        <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="./resume.pdf" target="_blank" rel="noopener" class="nav-cta">
+                <svg class="ico"><use href="#i-download"/></svg> Résumé
+            </a></li>
+            <li><a href="https://github.com/murtazakhan7" target="_blank" rel="noopener" class="nav-link nav-icon" aria-label="GitHub profile">
+                <svg class="ico"><use href="#i-github"/></svg>
+            </a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+    </div>
+
+    <div class="hero-inner">
+        <div class="hero-eyebrow" data-reveal>
+            <span class="status-dot"></span>
+            <span>Open to AI &amp; Software Engineering roles</span>
+        </div>
+
+        <h1 class="hero-name" data-reveal>Muhammad<br>Murtaza</h1>
+
+        <p class="hero-titles" data-reveal>
+            <span class="title-word">Software Engineer</span>
+            <span class="title-sep">/</span>
+            <span class="title-word title-word--accent">AI Engineer</span>
+        </p>
+
+        <p class="hero-bio" data-reveal>
+            CS graduate from GIKI (2026), based in Lahore. I build LLM-powered products end to end —
+            LangGraph agents, RAG pipelines, and multi-stage vision + NLP stacks — served through
+            FastAPI and Spring&nbsp;Boot backends.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+            <a href="./resume.pdf" target="_blank" rel="noopener" class="btn btn-primary">
+                <svg class="ico"><use href="#i-download"/></svg> Resume
+            </a>
+            <a href="https://github.com/murtazakhan7" target="_blank" rel="noopener" class="btn btn-ghost">
+                <svg class="ico"><use href="#i-github"/></svg> GitHub
+            </a>
+            <a href="https://linkedin.com/in/muhammad-murtaza-6444792a9" target="_blank" rel="noopener" class="btn btn-ghost">
+                <svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn
+            </a>
+            <a href="mailto:murtazamuhammad508@gmail.com" class="btn btn-ghost">
+                <svg class="ico"><use href="#i-mail"/></svg> Email
+            </a>
+        </div>
+
+        <div class="hero-meta" data-reveal>
+            <span class="meta-pill">
+                <svg class="ico"><use href="#i-pin"/></svg> Lahore, Pakistan
+            </span>
+            <span class="meta-pill">
+                <svg class="ico"><use href="#i-briefcase"/></svg> Product Experience Analyst · US Mobile
+            </span>
+            <span class="meta-pill">
+                <svg class="ico"><use href="#i-cap"/></svg> GIKI 2026 · CGPA 3.54 / 4.0
+            </span>
+            <span class="meta-pill">
+                <svg class="ico"><use href="#i-star"/></svg> Dean's Honor Roll
+            </span>
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+        <svg class="ico ico-lg"><use href="#i-chev"/></svg>
+    </a>
+</section>
+
+<!-- ── About ── -->
+<section id="about" class="section about-section">
+    <div class="container">
+        <p class="section-label" data-reveal>About</p>
+        <div class="about-grid">
+            <div class="about-side" data-reveal>
+                <div class="about-photo-wrap">
+                    <img src="my.png" alt="Muhammad Murtaza" class="about-photo" onerror="this.parentElement.classList.add('no-photo')">
                 </div>
-                <div class="about-text-col">
-                    <h2 class="about-heading">I build AI systems that actually work.</h2>
-                    <p>I'm a Computer Science graduate from GIKI (Class of 2026, CGPA 3.54, Dean's Honor Roll) based in Islamabad. My work sits at the intersection of applied ML and backend engineering — I've built multi-stage AI pipelines end-to-end, from training transformer models on 100k+ document corpora to deploying them behind production APIs on AWS.</p>
-                    <p>At Techlogix, I shipped backend features for LEAP, a Spring Boot workflow automation system used by SECP Pakistan — owning requirement translation, iterative delivery, and fast adaptation to changing regulatory specs. Before that I led HealthAtlas, our Final Year Project: a full-stack healthcare platform with a YOLO→TrOCR→FLAN-T5→RxNorm AI pipeline automating 70%+ of manual prescription processing.</p>
-                    <p>Outside code I represented Pakistan at Silverstone, UK with Formula GIKI's electric vehicle team, and competed at the Hult Prize. I'm actively looking for AI/ML and Software Engineering roles.</p>
-                    <div class="about-edu">
-                        <div class="edu-card">
-                            <div class="edu-icon">🎓</div>
-                            <div>
-                                <div class="edu-degree">B.S. Computer Science</div>
-                                <div class="edu-school">Ghulam Ishaq Khan Institute (GIKI) · 2022–2026</div>
-                                <div class="edu-detail">CGPA 3.54/4.0 · Dean's Honor Roll · Machine Learning, Deep Learning, Generative AI, DevOps</div>
-                            </div>
+                <div class="about-links">
+                    <a href="https://github.com/murtazakhan7" target="_blank" rel="noopener" class="link-pill">
+                        <svg class="ico"><use href="#i-github"/></svg> GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/muhammad-murtaza-6444792a9" target="_blank" rel="noopener" class="link-pill">
+                        <svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn
+                    </a>
+                    <a href="mailto:murtazamuhammad508@gmail.com" class="link-pill">
+                        <svg class="ico"><use href="#i-mail"/></svg> Email
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-main">
+                <h2 class="section-title" data-reveal>I build AI systems that actually ship.</h2>
+
+                <div class="about-body" data-reveal>
+                    <p>
+                        I'm a Computer Science graduate from GIKI (Class of 2026, CGPA 3.54, Dean's Honor Roll),
+                        based in Lahore. My work sits where applied ML meets backend engineering — LoRA
+                        fine-tuning Flan-T5, building RAG pipelines over ChromaDB, and orchestrating stateful
+                        agents with LangGraph behind async FastAPI services.
+                    </p>
+                    <p>
+                        I currently work as a <strong>Product Experience Analyst at US Mobile</strong>, resolving
+                        customer issues over live chat across plans, data, eSIM, APN configuration, international
+                        roaming, and device troubleshooting. Before that I interned at <strong>Techlogix</strong> on
+                        LEAP, a Spring Boot system digitizing SECP Pakistan's regulatory workflows — gathering and
+                        prioritizing requirements, translating BPR into structured workflow specifications, and
+                        proposing an AI chatbot with RAG over SECP policy documents after identifying a gap in how
+                        consumers navigate them.
+                    </p>
+                    <p>
+                        My Final Year Project, <strong>HealthAtlas</strong>, runs a YOLO11 → TrOCR → Flan-T5 XL →
+                        RxNorm pipeline with DrugBank interaction checking, surfacing clinically significant
+                        drug–drug interaction flags before the pharmacist dispenses. <strong>TalimBot</strong>, my
+                        Alibaba Cloud AI Hackathon entry, was selected for on-site presentation.
+                    </p>
+                </div>
+
+                <div class="about-facts">
+                    <div class="fact-card" data-reveal>
+                        <div class="fact-icon"><svg class="ico ico-lg"><use href="#i-cap"/></svg></div>
+                        <div class="fact-body">
+                            <div class="fact-title">B.S. Computer Science</div>
+                            <div class="fact-sub">Ghulam Ishaq Khan Institute (GIKI) · Sep 2022 – Jun 2026</div>
+                            <div class="fact-detail">CGPA 3.54 / 4.0 · Dean's Honor Roll (5 semesters)</div>
+                            <div class="fact-detail">Coursework: Machine Learning, Deep Learning, Generative AI, DSA, OOP, Design &amp; Analysis of Algorithms, DevOps</div>
+                        </div>
+                    </div>
+                    <div class="fact-card" data-reveal>
+                        <div class="fact-icon"><svg class="ico ico-lg"><use href="#i-trophy"/></svg></div>
+                        <div class="fact-body">
+                            <div class="fact-title">Alibaba Cloud AI Hackathon Pakistan 2026</div>
+                            <div class="fact-sub">TalimBot — AI-Powered Interview Coach &amp; Hiring Assistant</div>
+                            <div class="fact-detail">One of ~1,100 teams invited to present on-site, from 3,000 shortlisted entries.</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Experience -->
-    <section id="experience" class="section experience-section">
-        <div class="container">
-            <div class="section-label">Experience</div>
-            <h2 class="section-title">Where I've Worked</h2>
-            <div class="exp-card">
+<!-- ── Experience ── -->
+<section id="experience" class="section experience-section">
+    <div class="container">
+        <p class="section-label" data-reveal>Experience</p>
+        <h2 class="section-title" data-reveal>Where I've worked</h2>
+
+        <div class="timeline">
+            <!-- US Mobile -->
+            <article class="exp-card exp-card--current glass" data-reveal>
                 <div class="exp-header">
                     <div class="exp-title-block">
-                        <h3 class="exp-role">Software Engineering Intern</h3>
-                        <p class="exp-company">Techlogix &nbsp;·&nbsp; Client: SECP Pakistan</p>
+                        <span class="exp-badge-now">Current</span>
+                        <h3 class="exp-role">Product Experience Analyst</h3>
+                        <p class="exp-company">US Mobile <span class="exp-note">— US-based MVNO on Verizon, AT&amp;T, and T-Mobile</span></p>
                     </div>
                     <div class="exp-meta">
-                        <span class="exp-date">Jul 2025 – Sep 2025</span>
-                        <span class="exp-location">Islamabad, Pakistan</span>
+                        <span class="exp-date">Sep 2026 – Present</span>
+                        <span class="exp-location">Lahore, Pakistan</span>
                     </div>
                 </div>
                 <ul class="exp-bullets">
-                    <li>Shipped backend features end-to-end for LEAP, a Spring Boot workflow automation system digitizing regulatory compliance pipelines for SECP Pakistan</li>
-                    <li>Owned requirement translation and iterative feature delivery directly with client stakeholders, adapting rapidly to changing specs across the SDLC</li>
-                    <li>Operated in a fast-paced Agile team, maintaining delivery velocity through daily standups, sprint cycles, and Git-based collaboration</li>
+                    <li>Resolve customer issues over live chat on plans, data, eSIM, APN configuration, international roaming, and international long distance (ILD)</li>
+                    <li>Troubleshoot devices and networks end to end, checking compatibility from a single IMEI for network bands, VoLTE, 5G, and eSIM support</li>
+                    <li>Carry out account-level changes in the internal admin portal during troubleshooting, with security verification on every interaction</li>
+                    <li>Maintain a ~95% CSAT score (Oct 2026)</li>
                 </ul>
                 <div class="exp-tags">
-                    <span class="tag">Spring Boot</span>
-                    <span class="tag">Java</span>
-                    <span class="tag">Agile/Scrum</span>
-                    <span class="tag">Jira</span>
-                    <span class="tag">Git</span>
-                    <span class="tag">System Design</span>
+                    <span class="tag">Live Chat Support</span>
+                    <span class="tag">eSIM &amp; APN</span>
+                    <span class="tag">IMEI Diagnostics</span>
+                    <span class="tag">Admin Portal</span>
+                    <span class="tag">Slack</span>
+                    <span class="tag">NEST (Internal AI Assistant)</span>
+                    <span class="tag">Tailscale</span>
+                </div>
+            </article>
+
+            <!-- Techlogix -->
+            <article class="exp-card glass" data-reveal>
+                <div class="exp-header">
+                    <div class="exp-title-block">
+                        <h3 class="exp-role">Software Engineering Intern</h3>
+                        <p class="exp-company">Techlogix <span class="exp-note">— Client: SECP Pakistan</span></p>
+                    </div>
+                    <div class="exp-meta">
+                        <span class="exp-date">Jul 2025 – Sep 2025</span>
+                        <span class="exp-location">Islamabad / Rawalpindi, Pakistan</span>
+                    </div>
+                </div>
+                <ul class="exp-bullets">
+                    <li>Gathered and prioritized requirements for LEAP, a Spring Boot system digitizing SECP's compliance and approval processes</li>
+                    <li>Translated BPR requirements into structured workflow specifications, writing and refining SRS documents onsite with SECP stakeholders</li>
+                    <li>Modeled SECP's regulatory workflows in BPMN using Spring Tool Suite</li>
+                    <li>Identified a gap in how consumers navigate SECP policies and proposed an AI chatbot using RAG over policy documents</li>
+                    <li>Mentored SECP interns and participated in an Agile/Scrum team across daily standups and sprint cycles</li>
+                </ul>
+                <div class="exp-tags">
+                    <span class="tag">Requirements Gathering</span>
+                    <span class="tag">BPR → Workflow</span>
+                    <span class="tag">BPMN</span>
+                    <span class="tag">SRS</span>
+                    <span class="tag">RAG Proposal</span>
+                    <span class="tag">Agile / Scrum</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- Training & leadership -->
+        <h3 class="subsection-title" data-reveal>Training &amp; Leadership</h3>
+        <div class="mini-grid">
+            <article class="mini-card glass" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-layers"/></svg></span>
+                    <span class="mini-date">Aug 2026</span>
+                </div>
+                <h4>Erasmus+ CatchVR Summer Bootcamp</h4>
+                <p>Guest participant at GIKI in an Erasmus+ co-funded programme covering IoT, AR/VR, Digital Twin, Unity 3D, and Python/AI fundamentals. Final project: a VR Furniture &amp; Room Customizer System built in Unity with AR.</p>
+                <div class="mini-tags">
+                    <span class="tag tag-plain">Unity 3D</span>
+                    <span class="tag tag-plain">AR / VR</span>
+                    <span class="tag tag-plain">Digital Twin</span>
+                    <span class="tag tag-plain">IoT</span>
+                </div>
+            </article>
+
+            <article class="mini-card glass" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-wrench"/></svg></span>
+                    <span class="mini-date">2022 – 2024</span>
+                </div>
+                <h4>Formula GIKI — Technical Team</h4>
+                <p>Modeled and analyzed electric vehicle subsystems in MATLAB/Simulink. Represented Pakistan at IMechE Formula Student UK, Silverstone.</p>
+                <div class="mini-tags">
+                    <span class="tag tag-plain">MATLAB / Simulink</span>
+                    <span class="tag tag-plain">EV Systems</span>
+                </div>
+            </article>
+
+            <article class="mini-card glass" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-globe"/></svg></span>
+                    <span class="mini-date">2022 – 2026</span>
+                </div>
+                <h4>ASHRAE GIKI — Liaison Member</h4>
+                <p>Organized an AutoShow event with 200+ attendees, handling logistics and cross-department coordination.</p>
+                <div class="mini-tags">
+                    <span class="tag tag-plain">Event Management</span>
+                </div>
+            </article>
+
+            <article class="mini-card glass" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-spark"/></svg></span>
+                    <span class="mini-date">2023</span>
+                </div>
+                <h4>Hult Prize — Competitor</h4>
+                <p>International social entrepreneurship competition. Developed and pitched a scalable social impact startup concept.</p>
+                <div class="mini-tags">
+                    <span class="tag tag-plain">Entrepreneurship</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ── Projects ── -->
+<section id="projects" class="section projects-section">
+    <div class="container">
+        <p class="section-label" data-reveal>Projects</p>
+        <h2 class="section-title" data-reveal>Things I've built</h2>
+
+        <div class="bento">
+
+            <!-- TalimBot — featured, wide -->
+            <article class="tile tile--feature glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges">
+                        <span class="badge badge-accent">Hackathon Finalist</span>
+                        <span class="badge badge-plain">Oct 2026</span>
+                    </div>
+                    <div class="tile-links">
+                        <a href="https://github.com/murtazakhan7/TalimBot" target="_blank" rel="noopener" class="icon-link" aria-label="TalimBot on GitHub">
+                            <svg class="ico"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <h3 class="tile-title">TalimBot: AI-Powered Interview Coach &amp; Hiring Assistant for Pakistan</h3>
+                <p class="tile-lede">Voice-first interview coaching and hiring assistant — a LangGraph state machine enforces domain coverage, so the interview cannot drift.</p>
+
+                <div class="tile-cols">
+                    <ul class="tile-list">
+                        <li>React (Vite) frontend over an async FastAPI backend split into auth, interview, history, CV/JD parsing, and proctor routers</li>
+                        <li>LangGraph orchestrates stateful interviews and calls GPT-oss-120b on Groq for question generation, evaluation, and scoring</li>
+                    </ul>
+                    <ul class="tile-list">
+                        <li>Voice loop built on MediaRecorder capture, Deepgram Nova-3 transcription, and ElevenLabs text-to-speech</li>
+                        <li>JWT + bcrypt sessions; users, interviews, Q&amp;A, and scores stored in PostgreSQL</li>
+                    </ul>
+                </div>
+
+                <p class="tile-callout">
+                    <svg class="ico"><use href="#i-trophy"/></svg>
+                    One of ~1,100 teams invited to present on-site at the Alibaba Cloud AI Hackathon Pakistan 2026, from 3,000 shortlisted entries.
+                </p>
+
+                <div class="tile-tech">
+                    <span class="tag">React (Vite)</span><span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">GPT-oss-120b</span><span class="tag">Groq</span><span class="tag">Deepgram Nova-3</span><span class="tag">ElevenLabs</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span><span class="tag">bcrypt</span>
+                </div>
+            </article>
+
+            <!-- HealthAtlas — tall -->
+            <article class="tile tile--tall glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges">
+                        <span class="badge badge-accent">FYP</span>
+                        <span class="badge badge-plain">AI / Healthcare</span>
+                    </div>
+                    <div class="tile-links">
+                        <a href="https://github.com/rafay-imran8/medical-prescription-digitization" target="_blank" rel="noopener" class="icon-link" aria-label="HealthAtlas on GitHub">
+                            <svg class="ico"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <h3 class="tile-title">HealthAtlas</h3>
+                <p class="tile-lede">AI healthcare platform for prescription digitization and drug safety.</p>
+
+                <ol class="tile-pipeline">
+                    <li>YOLO11 field detection</li>
+                    <li>TrOCR text recognition</li>
+                    <li>Flan-T5 XL correction</li>
+                    <li>RxNorm normalization</li>
+                    <li>DrugBank interaction check</li>
+                </ol>
+
+                <ul class="tile-list">
+                    <li>Spring Boot backend, React frontend, and FastAPI ML microservices; PostgreSQL on AWS RDS, containerized with Docker</li>
+                    <li>Surfaces clinically significant drug–drug interaction flags before the pharmacist dispenses</li>
+                    <li>Flags any field where model confidence falls below 90%, so a human reviews only the uncertain results</li>
+                </ul>
+
+                <div class="tile-tech">
+                    <span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">YOLO11</span><span class="tag">TrOCR</span><span class="tag">Flan-T5 XL</span><span class="tag">PostgreSQL</span><span class="tag">AWS RDS</span><span class="tag">Docker</span>
+                </div>
+            </article>
+
+            <!-- RAG Research Paper Assistant -->
+            <article class="tile glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges"><span class="badge badge-accent">RAG / LLM</span></div>
+                    <div class="tile-links">
+                        <a href="https://github.com/murtazakhan7/Research-Paper-Assistant" target="_blank" rel="noopener" class="icon-link" aria-label="RAG Research Paper Assistant on GitHub">
+                            <svg class="ico"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="tile-title">RAG-Based Research Paper Assistant</h3>
+                <p class="tile-lede">Transformer models and semantic search over 117K ML-ArXiv papers.</p>
+                <ul class="tile-list">
+                    <li>Encoder-only abstract classification at 81.4% accuracy, decoder-only academic text generation, and encoder-decoder abstractive summarization</li>
+                    <li>RAG with Qwen2.5-7B-Instruct, 800-character chunks at 150 overlap, and ChromaDB vector indexing for citation-grounded answers</li>
+                    <li>8-bit quantization, MD5-based incremental indexing, and answers constrained strictly to retrieved context</li>
+                </ul>
+                <div class="tile-tech">
+                    <span class="tag">PyTorch</span><span class="tag">BERT</span><span class="tag">GPT</span><span class="tag">T5</span><span class="tag">Qwen2.5-7B</span><span class="tag">ChromaDB</span><span class="tag">LangChain</span>
+                </div>
+            </article>
+
+            <!-- EmotiBot -->
+            <article class="tile glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges"><span class="badge badge-accent">Multimodal AI</span></div>
+                    <div class="tile-links">
+                        <a href="https://github.com/murtazakhan7/EmotiBot-A-Multimodal-Emotion-Aware-Chatbot" target="_blank" rel="noopener" class="icon-link" aria-label="EmotiBot on GitHub">
+                            <svg class="ico"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="tile-title">EmotiBot</h3>
+                <p class="tile-lede">Multimodal emotion-aware chatbot.</p>
+                <ul class="tile-list">
+                    <li>Flan-T5 fine-tuned with LoRA for empathetic dialogue generation</li>
+                    <li>Vision Transformer for facial emotion recognition, fused with text sentiment for multimodal alignment</li>
+                    <li>Confidence estimation flags mismatches between the visual and text modalities; emotion classification evaluated with F1</li>
+                </ul>
+                <div class="tile-tech">
+                    <span class="tag">PyTorch</span><span class="tag">Flan-T5</span><span class="tag">LoRA</span><span class="tag">Vision Transformer</span><span class="tag">Gradio</span>
+                </div>
+            </article>
+
+            <!-- I.S. Wristworks -->
+            <article class="tile tile--wide glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges">
+                        <span class="badge badge-live"><span class="live-dot"></span> Live</span>
+                        <span class="badge badge-plain">Client Work</span>
+                    </div>
+                    <div class="tile-links">
+                        <a href="https://iswristworks.vercel.app" target="_blank" rel="noopener" class="icon-link" aria-label="I.S. Wristworks live site">
+                            <svg class="ico"><use href="#i-external"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="tile-title">I.S. Wristworks</h3>
+                <p class="tile-lede">Luxury watch storefront, live at iswristworks.vercel.app.</p>
+                <ul class="tile-list">
+                    <li>Dedicated admin page where the owner adds, updates, and removes watches, protected by Firebase Authentication and Firestore security rules</li>
+                    <li>Cart-to-WhatsApp checkout with cart details prefilled; EmailJS notifies both the customer and the owner</li>
+                    <li>Category and sub-category filters plus sale, trending, and new collections; images and reviews in Cloudinary</li>
+                </ul>
+                <div class="tile-tech">
+                    <span class="tag">Next.js</span><span class="tag">Firebase Auth</span><span class="tag">Firestore</span><span class="tag">Cloudinary</span><span class="tag">EmailJS</span><span class="tag">Vercel</span>
+                </div>
+            </article>
+
+            <!-- CartIQ -->
+            <article class="tile tile--wide glass" data-reveal data-spotlight>
+                <div class="tile-top">
+                    <div class="tile-badges"><span class="badge badge-accent">Full-Stack</span></div>
+                    <div class="tile-links">
+                        <a href="https://github.com/murtazakhan7/CartIQ" target="_blank" rel="noopener" class="icon-link" aria-label="CartIQ on GitHub">
+                            <svg class="ico"><use href="#i-github"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="tile-title">CartIQ</h3>
+                <p class="tile-lede">Full-stack fashion e-commerce platform.</p>
+                <ul class="tile-list">
+                    <li>ProductVariant model for per-size stock tracking, so customers see availability and final delivered cost before committing</li>
+                    <li>Similar-products algorithm with subcategory-first matching and category-level fallback</li>
+                    <li>Eliminated N+1 queries with select_related and prefetch_related; JWT auth, Docker Compose, GitHub Actions CI/CD</li>
+                </ul>
+                <div class="tile-tech">
+                    <span class="tag">Django REST Framework</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">Docker Compose</span><span class="tag">JWT</span>
+                </div>
+            </article>
+        </div>
+
+        <!-- More work -->
+        <h3 class="subsection-title" data-reveal>More work</h3>
+        <div class="mini-grid">
+            <a class="mini-card mini-card--link glass" href="https://github.com/murtazakhan7/SignSpeak-Real-Time-Sign-Language-to-Speech" target="_blank" rel="noopener" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-cpu"/></svg></span>
+                    <svg class="ico mini-go"><use href="#i-arrow"/></svg>
+                </div>
+                <h4>SignSpeak</h4>
+                <p>Real-time sign language to speech — 97.8% accuracy across 36 gesture classes with Mediapipe hand tracking and a fine-tuned ResNet.</p>
+                <div class="mini-tags"><span class="tag tag-plain">TensorFlow</span><span class="tag tag-plain">ResNet</span><span class="tag tag-plain">Streamlit</span></div>
+            </a>
+
+            <a class="mini-card mini-card--link glass" href="https://github.com/murtazakhan7/Hybrid-Data-Engineering-Pipeline" target="_blank" rel="noopener" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-layers"/></svg></span>
+                    <svg class="ico mini-go"><use href="#i-arrow"/></svg>
+                </div>
+                <h4>Hybrid Data Engineering Pipeline</h4>
+                <p>Lambda Architecture with Kafka ingestion and Spark Structured Streaming — end-to-end streaming latency under 30 seconds.</p>
+                <div class="mini-tags"><span class="tag tag-plain">Kafka</span><span class="tag tag-plain">Spark</span><span class="tag tag-plain">Docker</span></div>
+            </a>
+
+            <a class="mini-card mini-card--link glass" href="https://github.com/murtazakhan7/E-Store-using-Spring-Boot" target="_blank" rel="noopener" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-code"/></svg></span>
+                    <svg class="ico mini-go"><use href="#i-arrow"/></svg>
+                </div>
+                <h4>E-Store Platform</h4>
+                <p>Spring Boot e-commerce backend with JPA/Hibernate, stateless JWT, OAuth2 social login, and endpoint-level Spring Security.</p>
+                <div class="mini-tags"><span class="tag tag-plain">Spring Boot</span><span class="tag tag-plain">JPA</span><span class="tag tag-plain">OAuth2</span></div>
+            </a>
+
+            <a class="mini-card mini-card--link glass" href="https://github.com/murtazakhan7/GIKI-Connect" target="_blank" rel="noopener" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-globe"/></svg></span>
+                    <svg class="ico mini-go"><use href="#i-arrow"/></svg>
+                </div>
+                <h4>GIKI Connect</h4>
+                <p>Django platform connecting GIKI students and alumni through role-based Student, Alumni, and Admin interfaces.</p>
+                <div class="mini-tags"><span class="tag tag-plain">Django</span><span class="tag tag-plain">DRF</span><span class="tag tag-plain">SQLite</span></div>
+            </a>
+
+            <a class="mini-card mini-card--link glass" href="https://github.com/murtazakhan7/Machine-Learning-in-Parallel-Using-OpenMP-and-MPI" target="_blank" rel="noopener" data-reveal>
+                <div class="mini-head">
+                    <span class="mini-icon"><svg class="ico"><use href="#i-cpu"/></svg></span>
+                    <svg class="ico mini-go"><use href="#i-arrow"/></svg>
+                </div>
+                <h4>Parallelized ML Pipelines</h4>
+                <p>Preprocessing, training, and evaluation parallelized with OpenMP and MPI; scalability and speedup analysis across workloads.</p>
+                <div class="mini-tags"><span class="tag tag-plain">OpenMP</span><span class="tag tag-plain">MPI</span><span class="tag tag-plain">C++</span></div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ── Skills ── -->
+<section id="skills" class="section skills-section">
+    <div class="container">
+        <p class="section-label" data-reveal>Skills</p>
+        <h2 class="section-title" data-reveal>Technical stack</h2>
+
+        <div class="skills-grid">
+            <div class="skill-group glass" data-reveal>
+                <h3 class="skill-group-title"><span class="skill-icon"><svg class="ico"><use href="#i-code"/></svg></span> Languages</h3>
+                <div class="chips">
+                    <span class="chip chip-primary">Python</span>
+                    <span class="chip chip-primary">SQL</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">Java</span>
+                    <span class="chip">C++</span>
+                    <span class="chip">HTML / CSS</span>
                 </div>
             </div>
 
-            <!-- Leadership subsection -->
-            <div class="leadership-row">
-                <div class="leadership-card">
-                    <div class="lc-icon">🏎️</div>
-                    <div>
-                        <h4>Formula GIKI — Technical Team Member</h4>
-                        <p>Modeled and analyzed electric vehicle subsystems using MATLAB/Simulink for performance optimization. Represented Pakistan at Silverstone, UK.</p>
-                        <span class="tag">MATLAB/Simulink</span>
-                        <span class="tag">EV Systems</span>
-                    </div>
-                    <div class="lc-date">2022 – 2024</div>
+            <div class="skill-group glass" data-reveal>
+                <h3 class="skill-group-title"><span class="skill-icon"><svg class="ico"><use href="#i-layers"/></svg></span> Frameworks</h3>
+                <div class="chips">
+                    <span class="chip chip-primary">FastAPI</span>
+                    <span class="chip chip-primary">Spring Boot</span>
+                    <span class="chip chip-primary">Django REST Framework</span>
+                    <span class="chip">React</span>
+                    <span class="chip">Next.js</span>
+                    <span class="chip">Spring Security</span>
+                    <span class="chip">Hibernate / JPA</span>
                 </div>
-                <div class="leadership-card">
-                    <div class="lc-icon">🌍</div>
-                    <div>
-                        <h4>Hult Prize — Competitor</h4>
-                        <p>International social entrepreneurship competition. Developed and pitched a scalable social impact startup concept.</p>
-                        <span class="tag">Entrepreneurship</span>
-                    </div>
-                    <div class="lc-date">2023</div>
+            </div>
+
+            <div class="skill-group glass skill-group--wide" data-reveal>
+                <h3 class="skill-group-title"><span class="skill-icon"><svg class="ico"><use href="#i-cpu"/></svg></span> AI / ML</h3>
+                <div class="chips">
+                    <span class="chip chip-primary">PyTorch</span>
+                    <span class="chip chip-primary">LangGraph</span>
+                    <span class="chip chip-primary">RAG</span>
+                    <span class="chip chip-primary">LoRA (Flan-T5)</span>
+                    <span class="chip">Hugging Face</span>
+                    <span class="chip">LangChain</span>
+                    <span class="chip">ChromaDB</span>
+                    <span class="chip">Semantic Search</span>
+                    <span class="chip">8-bit Quantization</span>
+                    <span class="chip">Deepgram (STT)</span>
+                    <span class="chip">ElevenLabs (TTS)</span>
+                    <span class="chip">YOLO11</span>
+                    <span class="chip">TrOCR</span>
+                    <span class="chip">TensorFlow</span>
+                    <span class="chip">scikit-learn</span>
+                    <span class="chip">NumPy</span>
+                    <span class="chip">pandas</span>
+                    <span class="chip">NLP</span>
+                    <span class="chip">Computer Vision</span>
+                    <span class="chip">Model Evaluation</span>
                 </div>
-                <div class="leadership-card">
-                    <div class="lc-icon">🏢</div>
-                    <div>
-                        <h4>ASHRAE GIKI — Liaison Member</h4>
-                        <p>Organized AutoShow event with 200+ attendees, managing logistics and coordination across departments.</p>
-                        <span class="tag">Event Management</span>
-                    </div>
-                    <div class="lc-date">2022 – Present</div>
+            </div>
+
+            <div class="skill-group glass" data-reveal>
+                <h3 class="skill-group-title"><span class="skill-icon"><svg class="ico"><use href="#i-cloud"/></svg></span> Cloud &amp; DevOps</h3>
+                <div class="chips">
+                    <span class="chip chip-primary">Docker</span>
+                    <span class="chip chip-primary">AWS (EC2, RDS, S3)</span>
+                    <span class="chip">Docker Compose</span>
+                    <span class="chip">GitHub Actions</span>
+                    <span class="chip">CI / CD</span>
+                    <span class="chip">Linux</span>
+                    <span class="chip">Git</span>
+                    <span class="chip">Firebase</span>
+                    <span class="chip">Vercel</span>
+                    <span class="chip">Cloudinary</span>
+                    <span class="chip">PostgreSQL</span>
+                    <span class="chip">SQLite</span>
+                </div>
+            </div>
+
+            <div class="skill-group glass" data-reveal>
+                <h3 class="skill-group-title"><span class="skill-icon"><svg class="ico"><use href="#i-wrench"/></svg></span> Tools</h3>
+                <div class="chips">
+                    <span class="chip">Slack</span>
+                    <span class="chip">NEST (Internal AI Assistant)</span>
+                    <span class="chip">Tailscale</span>
+                    <span class="chip">Spring Tool Suite</span>
+                    <span class="chip">Unity 3D</span>
+                    <span class="chip">MATLAB / Simulink</span>
+                    <span class="chip">Gradio</span>
+                    <span class="chip">Streamlit</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Projects -->
-    <section id="projects" class="section projects-section">
-        <div class="container">
-            <div class="section-label">Projects</div>
-            <h2 class="section-title">Things I've Built</h2>
+<!-- ── Contact ── -->
+<section id="contact" class="section contact-section">
+    <div class="container">
+        <p class="section-label" data-reveal>Contact</p>
+        <h2 class="section-title" data-reveal>Let's talk</h2>
 
-            <!-- Featured row -->
-            <div class="projects-featured">
-                <!-- HealthAtlas -->
-                <div class="project-card project-featured" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges">
-                                <span class="badge badge-fyp">FYP</span>
-                                <span class="badge badge-ai">AI/ML</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/rafay-imran8/medical-prescription-digitization" target="_blank" class="icon-link" aria-label="GitHub">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">HealthAtlas</h3>
-                        <p class="project-subtitle">AI-Powered Prescription Digitization & Clinical Intelligence Platform</p>
-                        <p class="project-desc">Multi-tier healthcare platform with a four-stage AI pipeline: YOLO11 detection → TrOCR OCR → FLAN-T5 correction → RxNorm normalization — automating 70%+ of manual prescription processing end-to-end. Integrates DrugBank for drug-drug and disease-drug interaction analysis across patient prescriptions.</p>
-                        <div class="project-stats">
-                            <div class="pstat"><span class="pstat-val">70%+</span><span class="pstat-lbl">Processing Automated</span></div>
-                            <div class="pstat"><span class="pstat-val">~0.8</span><span class="pstat-lbl">YOLO mAP@50</span></div>
-                            <div class="pstat"><span class="pstat-val">4-tier</span><span class="pstat-lbl">System Architecture</span></div>
-                        </div>
-                        <div class="project-tech-row">
-                            <span class="tag">Spring Boot</span><span class="tag">React</span><span class="tag">FastAPI</span><span class="tag">YOLOv11</span><span class="tag">TrOCR</span><span class="tag">FLAN-T5</span><span class="tag">RxNorm</span><span class="tag">PostgreSQL</span><span class="tag">AWS RDS</span><span class="tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- RAG Research Paper Assistant -->
-                <div class="project-card project-featured" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges">
-                                <span class="badge badge-ai">RAG / LLM</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/murtazakhan7/Research-Paper-Assistant" target="_blank" class="icon-link" aria-label="GitHub">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                                </a>
-                            </div>
-                        </div>
-                        <h3 class="project-title">RAG Research Paper Assistant</h3>
-                        <p class="project-subtitle">Transformer Models + Semantic Search on 117K ML-ArXiv Papers</p>
-                        <p class="project-desc">Implemented three transformer architectures on 117K ML-ArXiv papers: encoder-only (abstract classification, 81.4% accuracy), decoder-only (text generation), encoder-decoder (abstractive summarization). Built a RAG pipeline with Qwen2.5-7B, overlapping chunking, and ChromaDB vector indexing. Applied 8-bit quantization and MD5-based incremental indexing to minimize hallucinations.</p>
-                        <div class="project-stats">
-                            <div class="pstat"><span class="pstat-val">81.4%</span><span class="pstat-lbl">Classification Accuracy</span></div>
-                            <div class="pstat"><span class="pstat-val">117K</span><span class="pstat-lbl">Papers Indexed</span></div>
-                            <div class="pstat"><span class="pstat-val">8-bit</span><span class="pstat-lbl">Quantized LLM</span></div>
-                        </div>
-                        <div class="project-tech-row">
-                            <span class="tag">PyTorch</span><span class="tag">BERT</span><span class="tag">GPT</span><span class="tag">T5</span><span class="tag">Qwen2.5-7B</span><span class="tag">ChromaDB</span><span class="tag">LangChain</span><span class="tag">RAG</span>
-                        </div>
-                    </div>
+        <div class="contact-layout">
+            <div class="contact-left" data-reveal>
+                <p class="contact-intro">
+                    I'm open to AI Engineering and Software Engineering roles. If you're building something
+                    worth building, or you have an opportunity worth discussing, my inbox is open.
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:murtazamuhammad508@gmail.com" class="contact-card glass">
+                        <span class="contact-icon"><svg class="ico"><use href="#i-mail"/></svg></span>
+                        <span class="contact-text">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">murtazamuhammad508@gmail.com</span>
+                        </span>
+                        <svg class="ico contact-arrow"><use href="#i-arrow"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/muhammad-murtaza-6444792a9" target="_blank" rel="noopener" class="contact-card glass">
+                        <span class="contact-icon"><svg class="ico"><use href="#i-linkedin"/></svg></span>
+                        <span class="contact-text">
+                            <span class="contact-label">LinkedIn</span>
+                            <span class="contact-value">muhammad-murtaza-6444792a9</span>
+                        </span>
+                        <svg class="ico contact-arrow"><use href="#i-arrow"/></svg>
+                    </a>
+                    <a href="https://github.com/murtazakhan7" target="_blank" rel="noopener" class="contact-card glass">
+                        <span class="contact-icon"><svg class="ico"><use href="#i-github"/></svg></span>
+                        <span class="contact-text">
+                            <span class="contact-label">GitHub</span>
+                            <span class="contact-value">github.com/murtazakhan7</span>
+                        </span>
+                        <svg class="ico contact-arrow"><use href="#i-arrow"/></svg>
+                    </a>
+                    <a href="tel:+923190195270" class="contact-card glass">
+                        <span class="contact-icon"><svg class="ico"><use href="#i-phone"/></svg></span>
+                        <span class="contact-text">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+92 319-0195270</span>
+                        </span>
+                        <svg class="ico contact-arrow"><use href="#i-arrow"/></svg>
+                    </a>
                 </div>
             </div>
 
-            <!-- Secondary grid -->
-            <div class="projects-grid" id="projects-grid">
-                <!-- EmotiBot -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-ai">Multimodal AI</span></div>
-                            <a href="https://github.com/murtazakhan7/EmotiBot-A-Multimodal-Emotion-Aware-Chatbot" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">EmotiBot</h3>
-                        <p class="project-subtitle">Multimodal Emotion-Aware Chatbot</p>
-                        <p class="project-desc">Fine-tuned Flan-T5 with LoRA for empathetic dialogue generation. Vision Transformer for facial emotion recognition, fused with text sentiment for multimodal alignment. F1 0.5–0.6 on emotion classification with confidence estimation for modality mismatch.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">PyTorch</span><span class="tag">ViT</span><span class="tag">Flan-T5</span><span class="tag">LoRA</span><span class="tag">Gradio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SignSpeak -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-cv">Computer Vision</span></div>
-                            <a href="https://github.com/murtazakhan7/SignSpeak-Real-Time-Sign-Language-to-Speech" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">SignSpeak</h3>
-                        <p class="project-subtitle">Real-Time Sign Language to Speech Translator</p>
-                        <p class="project-desc">97.8% accuracy across 36 gesture classes using Mediapipe hand tracking and a fine-tuned ResNet via two-phase transfer learning. 100% top-3/top-5. Deployed as a Streamlit app with live webcam inference and offline TTS.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">TensorFlow</span><span class="tag">ResNet</span><span class="tag">Mediapipe</span><span class="tag">OpenCV</span><span class="tag">Streamlit</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Hybrid Pipeline -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-be">Data Engineering</span></div>
-                            <a href="https://github.com/murtazakhan7/Hybrid-Data-Engineering-Pipeline" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">Hybrid Data Engineering Pipeline</h3>
-                        <p class="project-subtitle">Real-Time E-Commerce Analytics — Lambda Architecture</p>
-                        <p class="project-desc">Lambda Architecture with Kafka ingestion (sub-30s latency), Spark Structured Streaming with 1-minute tumbling windows, PostgreSQL via JDBC micro-batch writes, and a live Plotly Dash dashboard refreshing every 5 seconds. Fully containerized with Docker Compose.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">Apache Kafka</span><span class="tag">PySpark</span><span class="tag">Spark Streaming</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- E-Store -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-be">Backend</span></div>
-                            <a href="https://github.com/murtazakhan7/E-Store-using-Spring-Boot" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">E-Store Platform</h3>
-                        <p class="project-subtitle">Secure E-Commerce Backend</p>
-                        <p class="project-desc">Production-grade e-commerce backend with JPA/Hibernate ORM and full CRUD across product, order, and user domains. Stateless JWT auth, OAuth2 social login, and endpoint-level Spring Security authorization.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">JPA/Hibernate</span><span class="tag">PostgreSQL</span><span class="tag">JWT</span><span class="tag">OAuth2</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- GIKI Connect -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-be">Full-Stack</span></div>
-                            <a href="https://github.com/murtazakhan7/GIKI-Connect" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">GIKI Connect</h3>
-                        <p class="project-subtitle">Student & Alumni Networking Platform</p>
-                        <p class="project-desc">Django REST Framework platform connecting GIKI students and alumni through Student, Alumni, and Admin interfaces with role-based access control, mentorship applications, peer messaging, and admin moderation workflows.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">Django</span><span class="tag">Django REST</span><span class="tag">SQLite</span><span class="tag">JavaScript</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Parallelized ML -->
-                <div class="project-card" data-fade>
-                    <div class="project-card-inner">
-                        <div class="project-top">
-                            <div class="project-badges"><span class="badge badge-sys">HPC</span></div>
-                            <a href="https://github.com/murtazakhan7/Machine-Learning-in-Parallel-Using-OpenMP-and-MPI" target="_blank" class="icon-link" aria-label="GitHub">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <h3 class="project-title">Parallelized ML Pipelines</h3>
-                        <p class="project-subtitle">OpenMP & MPI for Distributed ML Workloads</p>
-                        <p class="project-desc">Parallelized data preprocessing, model training, and evaluation using OpenMP and MPI. Analyzed scalability, speedup curves, and performance bottlenecks across distributed ML workloads.</p>
-                        <div class="project-tech-row">
-                            <span class="tag">OpenMP</span><span class="tag">MPI</span><span class="tag">Python</span><span class="tag">C++</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills" class="section skills-section">
-        <div class="container">
-            <div class="section-label">Skills</div>
-            <h2 class="section-title">Technical Stack</h2>
-            <div class="skills-layout">
-                <div class="skill-group" data-fade>
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🤖</span> ML & AI
-                    </h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip chip-primary">PyTorch</span>
-                        <span class="skill-chip chip-primary">TensorFlow</span>
-                        <span class="skill-chip chip-primary">HuggingFace</span>
-                        <span class="skill-chip chip-primary">LangChain</span>
-                        <span class="skill-chip chip-primary">LlamaIndex</span>
-                        <span class="skill-chip chip-primary">RAG</span>
-                        <span class="skill-chip chip-primary">LLM Fine-tuning (LoRA/QLoRA)</span>
-                        <span class="skill-chip chip-primary">RLHF</span>
-                        <span class="skill-chip chip-primary">NLP</span>
-                        <span class="skill-chip chip-primary">Computer Vision</span>
-                        <span class="skill-chip chip-primary">scikit-learn</span>
-                        <span class="skill-chip chip-primary">ChromaDB</span>
-                        <span class="skill-chip chip-secondary">NumPy</span>
-                        <span class="skill-chip chip-secondary">pandas</span>
-                        <span class="skill-chip chip-secondary">Streamlit</span>
-                    </div>
-                </div>
-                <div class="skill-group" data-fade>
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">⚙️</span> Backend & APIs
-                    </h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip chip-primary">Spring Boot</span>
-                        <span class="skill-chip chip-primary">FastAPI</span>
-                        <span class="skill-chip chip-primary">Django REST Framework</span>
-                        <span class="skill-chip chip-primary">Spring Security</span>
-                        <span class="skill-chip chip-primary">JWT / OAuth2</span>
-                        <span class="skill-chip chip-primary">Hibernate / JPA</span>
-                        <span class="skill-chip chip-secondary">React</span>
-                        <span class="skill-chip chip-secondary">Flutter</span>
-                    </div>
-                </div>
-                <div class="skill-group" data-fade>
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🗄️</span> Data & Cloud
-                    </h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip chip-primary">PostgreSQL</span>
-                        <span class="skill-chip chip-primary">AWS (EC2, RDS, S3)</span>
-                        <span class="skill-chip chip-primary">Apache Kafka</span>
-                        <span class="skill-chip chip-primary">Apache Spark / PySpark</span>
-                        <span class="skill-chip chip-secondary">SQLite</span>
-                        <span class="skill-chip chip-secondary">ChromaDB</span>
-                    </div>
-                </div>
-                <div class="skill-group" data-fade>
-                    <h3 class="skill-group-title">
-                        <span class="skill-group-icon">🛠️</span> DevOps & Languages
-                    </h3>
-                    <div class="skill-chips">
-                        <span class="skill-chip chip-primary">Python</span>
-                        <span class="skill-chip chip-primary">Java</span>
-                        <span class="skill-chip chip-primary">C++</span>
-                        <span class="skill-chip chip-primary">SQL</span>
-                        <span class="skill-chip chip-primary">Docker</span>
-                        <span class="skill-chip chip-primary">Git / GitHub Actions</span>
-                        <span class="skill-chip chip-secondary">Terraform</span>
-                        <span class="skill-chip chip-secondary">Linux</span>
-                        <span class="skill-chip chip-secondary">CI/CD</span>
-                        <span class="skill-chip chip-secondary">MLOps</span>
-                        <span class="skill-chip chip-secondary">Jira</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <div class="section-label">Contact</div>
-            <h2 class="section-title">Let's Talk</h2>
-            <div class="contact-layout">
-                <div class="contact-left" data-fade>
-                    <p class="contact-intro">I'm actively looking for AI/ML and Software Engineering roles. If you're building something interesting or have an opportunity worth discussing, my inbox is open.</p>
-                    <div class="contact-cards">
-                        <a href="mailto:murtazamuhammad508@gmail.com" class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                            </div>
-                            <div>
-                                <div class="contact-card-label">Email</div>
-                                <div class="contact-card-value">murtazamuhammad508@gmail.com</div>
-                            </div>
-                            <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                        </a>
-                        <a href="https://linkedin.com/in/muhammad-murtaza-6444792a9" target="_blank" class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </div>
-                            <div>
-                                <div class="contact-card-label">LinkedIn</div>
-                                <div class="contact-card-value">muhammad-murtaza-6444792a9</div>
-                            </div>
-                            <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                        </a>
-                        <a href="https://github.com/murtazakhan7" target="_blank" class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </div>
-                            <div>
-                                <div class="contact-card-label">GitHub</div>
-                                <div class="contact-card-value">github.com/murtazakhan7</div>
-                            </div>
-                            <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                        </a>
-                        <a href="tel:+923190195270" class="contact-card">
-                            <div class="contact-card-icon">
-                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.11 12 19.79 19.79 0 0 1 1.13 3.37 2 2 0 0 1 3.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div>
-                                <div class="contact-card-label">Phone</div>
-                                <div class="contact-card-value">+92 319-0195270</div>
-                            </div>
-                            <svg class="contact-card-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-right" data-fade>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-field">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Your name" required>
-                            </div>
-                            <div class="form-field">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
-                            </div>
+            <div class="contact-right" data-reveal>
+                <form class="contact-form glass" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required>
                         </div>
                         <div class="form-field">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="email" required>
                         </div>
-                        <div class="form-field">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary form-submit">
-                            Send Message
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-                        </button>
-                        <div id="formStatus" class="form-status"></div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me more..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <svg class="ico"><use href="#i-send"/></svg> Send Message
+                    </button>
+                    <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <span class="footer-brand">Muhammad Murtaza</span>
-            <span class="footer-copy">Built with care · 2026</span>
-            <a href="#home" class="footer-top">Back to top ↑</a>
-        </div>
-    </footer>
+<!-- ── Footer ── -->
+<footer class="footer">
+    <div class="container footer-inner">
+        <span class="footer-brand">Muhammad Murtaza</span>
+        <span class="footer-copy">Lahore, Pakistan · Built with vanilla HTML, CSS &amp; JS · 2026</span>
+        <a href="#home" class="footer-top">Back to top <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+</footer>
+
 </body>
 </html>
